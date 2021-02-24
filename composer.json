@@ -1,0 +1,55 @@
+{
+    "name": "netflex/livewire-tables",
+    "description": "A dynamic Livewire table component for the Netflex SDK",
+    "keywords": [
+        "netflex",
+        "livewire",
+        "datatables",
+        "tables"
+    ],
+    "homepage": "https://github.com/netflex-sdk/livewire-tables",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Thomas Alrek",
+            "email": "thomas@apility.no",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^7.4|^8.0",
+        "illuminate/support": "^8.27",
+        "livewire/livewire": "^2.0",
+        "netflex/api": "^3.0",
+        "netflex/query-builder": "^3.0",
+        "netflex/structures": "^3.0"
+    },
+    "require-dev": {
+        "netflex/pages": "^3.0",
+        "phpoffice/phpspreadsheet": "^1.0"
+    },
+    "suggest": {
+        "phpoffice/phpspreadsheet": "Required to use export functionality"
+    },
+    "autoload": {
+        "psr-4": {
+            "Netflex\\Livewire\\Tables\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Netflex\\Livewire\\Tables\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "Netflex\\Livewire\\Tables\\Providers\\LivewireTablesServiceProvider"
+            ]
+        }
+    }
+}
